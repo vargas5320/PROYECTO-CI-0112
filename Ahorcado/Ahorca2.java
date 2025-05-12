@@ -98,7 +98,7 @@ public class Ahorca2{
             for (int i = 0; i < palabra1.length; i++) {
                 System.out.println( palabra1[i].toString());                           
             }
-            2
+            
             // palabra de jugador 2
         
             try{
@@ -167,7 +167,7 @@ public class Ahorca2{
                         for (int j = 0; j < palabra2.length; j++){
                             if(letrak.equals(palabra2[j])){
                                 System.out.println("Ha" +" "+ "acertado");
-                                palabra2Aux[j]= palabra2[j];
+                                palabra2Aux[j]= letrak;
                                 for (int p = 0; p < palabra2Aux.length; p++) {
                                     System.out.println( palabra2Aux[p].toString());                           
                                 }
