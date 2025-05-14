@@ -41,7 +41,19 @@ public class BatallaNaval {
     public int getVidasJugador2() {
         return vidasJugador2;
     }
-
+    public char[][] getTableroJugador1() {
+    return tableroJugador1;
+    }
+    public char[][] getTableroJugador2() {
+        return tablerojugador2;
+    }
+    public boolean[][] getBarcosJugador1() {
+        return barcosJugador1;
+    }
+    public boolean[][] getBarcosJugador2() {
+        return barcosjugador2;
+    }
+    
     // Setters
     public void setAgua(char agua) {
         this.agua = agua;
@@ -72,7 +84,7 @@ public class BatallaNaval {
     }
 
     // Colocar los barcos de los jugadores
-    public void colocarBarcos(boolean[][] barcos) {
+    public void colocarBarcos(boolean[][] barcos, char[][] tablero) {
         int colocados = 0;
         System.out.println("Coloque sus tres barcos (una casilla cada uno)");
 
@@ -92,7 +104,10 @@ public class BatallaNaval {
                     System.out.println("Ya hay un barco ahí, elija otro sitio.");
                 } else {
                     barcos[fila][columna] = true;
+                    tablero[fila][columna] = '⛵'; // Se muestra la posición del barco en el tablero
                     colocados++;
+                    System.out.println("Su tablero actualmente se ve así: ");
+                    imprimirTablero(tablero); 
                 }
             }
             catch (Exception e) {
@@ -141,7 +156,7 @@ public class BatallaNaval {
             System.out.println("Turno del " + (turnoJugador1 ? "Jugador 1" : "Jugador 2"));
             System.out.println("Tu tablero: ");
             imprimirTablero(turnoJugador1 ? tableroJugador1 : tablerojugador2);
-            System.out.println("Tablero del enemigo: ");
+            System.out.println("Tablero del oponente: ");
             imprimirTableroOponente(turnoJugador1 ? tablerojugador2 : tableroJugador1);
 
             try {
@@ -183,16 +198,5 @@ public class BatallaNaval {
         }
         System.out.println("Juego terminado.");
         System.out.println("Ganador: " + (vidasJugador1 > 0 ? "Jugador 1" : "Jugador 2"));
-    }
-
-    // Método principal del programa
-    public static void main(String[] args) {
-        BatallaNaval juego = new BatallaNaval('~', 'X', 'O', 3);
-        juego.iniciarTableros();
-        System.out.println("Jugador 1, coloque sus barcos: ");
-        juego.colocarBarcos(juego.barcosJugador1);
-        System.out.println("Jugador 2, coloque sus barcos: ");
-        juego.colocarBarcos(juego.barcosjugador2);
-        juego.jugar();
     }
 }
