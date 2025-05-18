@@ -17,13 +17,8 @@ public class Juegos {
 
             switch (opcion) {
                 case 1:
-                    BatallaNaval juego = new BatallaNaval('~', 'X', 'O', 3);
-                    juego.iniciarTableros();
-                    System.out.println("Jugador 1, coloque sus barcos: ");
-                    juego.colocarBarcos(juego.getBarcosJugador1(), juego.getTableroJugador1());
-                    System.out.println("Jugador 2, coloque sus barcos: ");
-                    juego.colocarBarcos(juego.getBarcosJugador2(), juego.getTableroJugador2());
-                    juego.jugar();
+                    BatallaNaval juego = new BatallaNaval();
+                    juego.iniciarJuego();
                     break;
                 case 2:
                     // == INICIO del main de Ahorcado ==
