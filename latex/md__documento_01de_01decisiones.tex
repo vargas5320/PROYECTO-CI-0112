@@ -1,0 +1,56 @@
+\chapter{Documento de decisiones}
+\hypertarget{md__documento_01de_01decisiones}{}\label{md__documento_01de_01decisiones}\index{Documento de decisiones@{Documento de decisiones}}
+\label{md__documento_01de_01decisiones_autotoc_md0}%
+\Hypertarget{md__documento_01de_01decisiones_autotoc_md0}%
+\hypertarget{md__documento_01de_01decisiones_autotoc_md1}{}\doxysection{\texorpdfstring{Acuerdos de pareja}{Acuerdos de pareja}}\label{md__documento_01de_01decisiones_autotoc_md1}
+Para el desarrollo del proyecto, se distribuyeron las tareas de la siguiente manera\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Erika}} fue responsable del desarrollo completo del juego {\bfseries{Batalla Naval}}, incluyendo la lógica del tablero, turnos, disparos y control de vidas.
+\item {\bfseries{Samuel}} se encargó del juego {\bfseries{\doxylink{class_ahorcado}{Ahorcado}}}, desarrollando el sistema de validación de letras, control de intentos y verificación del ganador.
+\item {\bfseries{Sebastián}} fue el encargado del menú principal en la clase {\ttfamily \doxylink{_juegos_8java}{Juegos.\+java}}, además de encargarse de\+:
+\begin{DoxyItemize}
+\item La documentación técnica utilizando {\bfseries{Doxygen}}.
+\item La revisión y {\bfseries{corrección de errores}} en los códigos desarrollados por los compañeros.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__documento_01de_01decisiones_autotoc_md3}{}\doxysection{\texorpdfstring{Decisiones de diseño}{Decisiones de diseño}}\label{md__documento_01de_01decisiones_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Se crearon clases independientes para cada juego ({\ttfamily \doxylink{class_ahorcado}{Ahorcado}}, {\ttfamily \doxylink{class_batalla_naval}{Batalla\+Naval}}), cada una con su propia lógica.
+\item Se diseñaron clases para los jugadores\+: {\ttfamily \doxylink{class_jugador}{Jugador}} (para \doxylink{class_ahorcado}{Ahorcado}) y {\ttfamily \doxylink{class_jugador_b_n}{Jugador\+BN}} (para Batalla Naval), ya que manejan atributos distintos.
+\item La clase {\ttfamily \doxylink{class_tablero}{Tablero}} tiene el tablero del juego Batalla Naval, con métodos para imprimir, actualizar y verificar el estado del juego.
+\item El menú principal ({\ttfamily \doxylink{_juegos_8java}{Juegos.\+java}}) funciona el control principal del programa, y se encarga de recibir la entrada del usuario y redirigirla al juego correspondiente.
+\item Documentación con Doxygen para mantener una estructura más profesional y facilitar la lectura.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__documento_01de_01decisiones_autotoc_md5}{}\doxysection{\texorpdfstring{Decisiones de implementación}{Decisiones de implementación}}\label{md__documento_01de_01decisiones_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Se utilizaron {\bfseries{matrices bidimensionales ({\ttfamily char\mbox{[}\mbox{]}\mbox{[}\mbox{]}}, {\ttfamily boolean\mbox{[}\mbox{]}\mbox{[}\mbox{]}})}} en el juego Batalla Naval para representar el tablero y la ubicación real de los barcos.
+\item En el juego \doxylink{class_ahorcado}{Ahorcado}, se utilizaron {\bfseries{arreglos de caracteres}} y {\bfseries{arreglos auxiliares booleanos}} ({\ttfamily palabra1\+Aux}, etc.) para registrar letras adivinadas.
+\item El sistema de entrada de datos se diseñó con\+:
+\begin{DoxyItemize}
+\item Uso de {\ttfamily try-\/catch} para capturar errores por entradas no válidas ({\ttfamily Input\+Mismatch\+Exception}).
+\item Uso de ({\ttfamily \mbox{[}A-\/Z\mbox{]}}) para validar letras mayúsculas en \doxylink{class_ahorcado}{Ahorcado}.
+\end{DoxyItemize}
+\item La lógica de turnos se implementó con estructuras simples ({\ttfamily while}, {\ttfamily if}, {\ttfamily boolean}), buscando claridad y facilidad de mantenimiento.
+\item Se priorizó la legibilidad del código, manteniendo los métodos relativamente cortos y bien nombrados.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__documento_01de_01decisiones_autotoc_md7}{}\doxysection{\texorpdfstring{Puntos de mejora}{Puntos de mejora}}\label{md__documento_01de_01decisiones_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Permitir solo letras no repetidas en \doxylink{class_ahorcado}{Ahorcado}, y evitar sobreescribir barcos en Batalla Naval.
+\item Limpiar la consola entre turnos para mejorar la parte visual.
+\item Reutilizar clases\+: se podría crear una superclase {\ttfamily Jugador\+Base} para compartir código entre {\ttfamily \doxylink{class_jugador}{Jugador}} y {\ttfamily \doxylink{class_jugador_b_n}{Jugador\+BN}}.
+\item Permitir guardar y cargar partidas usando archivos.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ 

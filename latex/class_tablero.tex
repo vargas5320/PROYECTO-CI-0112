@@ -1,0 +1,178 @@
+\doxysection{Tablero Class Reference}
+\hypertarget{class_tablero}{}\label{class_tablero}\index{Tablero@{Tablero}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_tablero_ae5fe3d26c6f86cea0c2baa0f197c7461}{get\+Agua}} ()
+\item 
+char\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_tablero_af0833db87e6d063c783975c9b6b4bf01}{get\+Tablero}} ()
+\item 
+boolean\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_tablero_a8ae65120aab05ca6c846b6b317792d7f}{get\+Barcos}} ()
+\item 
+\mbox{\hyperlink{class_tablero_a3dc30cf62a5a1cccfd0f5f1a81a6bb5a}{Tablero}} (char agua)
+\item 
+void \mbox{\hyperlink{class_tablero_ae6e6ff263628ec89217572215e7afc61}{iniciar\+Tablero}} ()
+\item 
+void \mbox{\hyperlink{class_tablero_a054499f0d66089f96a49dbab80a14f55}{colocar\+Barcos}} (int fila, int col)
+\item 
+boolean \mbox{\hyperlink{class_tablero_a801fcca107ae1a83b66851bae87f7313}{hay\+Barco}} (int fila, int col)
+\item 
+void \mbox{\hyperlink{class_tablero_a67f23d53ea0218fd89fc98ac416bbea7}{hubo\+Hit}} (int fila, int col, char hit)
+\item 
+void \mbox{\hyperlink{class_tablero_ab3ab738abca0bd6e18a27e52d0e4cbb4}{hubofallo}} (int fila, int col, char fallo)
+\item 
+char \mbox{\hyperlink{class_tablero_a3b8d91801d8e033f9f284353e2af3144}{get\+Tablero}} (int fila, int col)
+\item 
+void \mbox{\hyperlink{class_tablero_ab18fe917434963f6f53554bbf951e163}{tablero\+Propio}} ()
+\item 
+void \mbox{\hyperlink{class_tablero_ad7af623a144f83dd03731e9a46a2d1ab}{tablero\+Oponente}} (char hit, char fallo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_tablero_a3dc30cf62a5a1cccfd0f5f1a81a6bb5a}\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{Tablero()}{Tablero()}}
+{\footnotesize\ttfamily \label{class_tablero_a3dc30cf62a5a1cccfd0f5f1a81a6bb5a} 
+Tablero.\+Tablero (\begin{DoxyParamCaption}\item[{char}]{agua}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor del tablero. Inicializa la matriz del tablero y la de barcos. 
+\begin{DoxyParams}{Parameters}
+{\em agua} & Carácter que representa el agua en el tablero. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tablero_a054499f0d66089f96a49dbab80a14f55}\index{Tablero@{Tablero}!colocarBarcos@{colocarBarcos}}
+\index{colocarBarcos@{colocarBarcos}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{colocarBarcos()}{colocarBarcos()}}
+{\footnotesize\ttfamily \label{class_tablero_a054499f0d66089f96a49dbab80a14f55} 
+void Tablero.\+colocar\+Barcos (\begin{DoxyParamCaption}\item[{int}]{fila}{, }\item[{int}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Coloca un barco en una posición específica. 
+\begin{DoxyParams}{Parameters}
+{\em fila} & Fila donde se colocará el barco. \\
+\hline
+{\em col} & Columna donde se colocará el barco. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tablero_ae5fe3d26c6f86cea0c2baa0f197c7461}\index{Tablero@{Tablero}!getAgua@{getAgua}}
+\index{getAgua@{getAgua}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getAgua()}{getAgua()}}
+{\footnotesize\ttfamily \label{class_tablero_ae5fe3d26c6f86cea0c2baa0f197c7461} 
+char Tablero.\+get\+Agua (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene el símbolo que representa el agua. \begin{DoxyReturn}{Returns}
+Carácter para agua. 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_a8ae65120aab05ca6c846b6b317792d7f}\index{Tablero@{Tablero}!getBarcos@{getBarcos}}
+\index{getBarcos@{getBarcos}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getBarcos()}{getBarcos()}}
+{\footnotesize\ttfamily \label{class_tablero_a8ae65120aab05ca6c846b6b317792d7f} 
+boolean\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Tablero.\+get\+Barcos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene la matriz de barcos. \begin{DoxyReturn}{Returns}
+Matriz booleana que indica la posición de los barcos. 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_af0833db87e6d063c783975c9b6b4bf01}\index{Tablero@{Tablero}!getTablero@{getTablero}}
+\index{getTablero@{getTablero}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getTablero()}{getTablero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_tablero_af0833db87e6d063c783975c9b6b4bf01} 
+char\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Tablero.\+get\+Tablero (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene la matriz del tablero visual. \begin{DoxyReturn}{Returns}
+Matriz de caracteres del tablero. 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_a3b8d91801d8e033f9f284353e2af3144}\index{Tablero@{Tablero}!getTablero@{getTablero}}
+\index{getTablero@{getTablero}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{getTablero()}{getTablero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_tablero_a3b8d91801d8e033f9f284353e2af3144} 
+char Tablero.\+get\+Tablero (\begin{DoxyParamCaption}\item[{int}]{fila}{, }\item[{int}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene el símbolo de una posición del tablero. 
+\begin{DoxyParams}{Parameters}
+{\em fila} & Fila deseada. \\
+\hline
+{\em col} & Columna deseada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Carácter en la posición indicada del tablero. 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_a801fcca107ae1a83b66851bae87f7313}\index{Tablero@{Tablero}!hayBarco@{hayBarco}}
+\index{hayBarco@{hayBarco}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{hayBarco()}{hayBarco()}}
+{\footnotesize\ttfamily \label{class_tablero_a801fcca107ae1a83b66851bae87f7313} 
+boolean Tablero.\+hay\+Barco (\begin{DoxyParamCaption}\item[{int}]{fila}{, }\item[{int}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Verifica si hay un barco en la posición indicada. 
+\begin{DoxyParams}{Parameters}
+{\em fila} & Fila a verificar. \\
+\hline
+{\em col} & Columna a verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si hay un barco, false si no. 
+\end{DoxyReturn}
+\Hypertarget{class_tablero_ab3ab738abca0bd6e18a27e52d0e4cbb4}\index{Tablero@{Tablero}!hubofallo@{hubofallo}}
+\index{hubofallo@{hubofallo}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{hubofallo()}{hubofallo()}}
+{\footnotesize\ttfamily \label{class_tablero_ab3ab738abca0bd6e18a27e52d0e4cbb4} 
+void Tablero.\+hubofallo (\begin{DoxyParamCaption}\item[{int}]{fila}{, }\item[{int}]{col}{, }\item[{char}]{fallo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marca una posición como fallo (miss). 
+\begin{DoxyParams}{Parameters}
+{\em fila} & Fila del disparo. \\
+\hline
+{\em col} & Columna del disparo. \\
+\hline
+{\em fallo} & Símbolo que representa el fallo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tablero_a67f23d53ea0218fd89fc98ac416bbea7}\index{Tablero@{Tablero}!huboHit@{huboHit}}
+\index{huboHit@{huboHit}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{huboHit()}{huboHit()}}
+{\footnotesize\ttfamily \label{class_tablero_a67f23d53ea0218fd89fc98ac416bbea7} 
+void Tablero.\+hubo\+Hit (\begin{DoxyParamCaption}\item[{int}]{fila}{, }\item[{int}]{col}{, }\item[{char}]{hit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marca una posición como acierto (hit). 
+\begin{DoxyParams}{Parameters}
+{\em fila} & Fila del disparo. \\
+\hline
+{\em col} & Columna del disparo. \\
+\hline
+{\em hit} & Símbolo que representa el hit. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tablero_ae6e6ff263628ec89217572215e7afc61}\index{Tablero@{Tablero}!iniciarTablero@{iniciarTablero}}
+\index{iniciarTablero@{iniciarTablero}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{iniciarTablero()}{iniciarTablero()}}
+{\footnotesize\ttfamily \label{class_tablero_ae6e6ff263628ec89217572215e7afc61} 
+void Tablero.\+iniciar\+Tablero (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inicializa el tablero con agua y sin barcos. \Hypertarget{class_tablero_ad7af623a144f83dd03731e9a46a2d1ab}\index{Tablero@{Tablero}!tableroOponente@{tableroOponente}}
+\index{tableroOponente@{tableroOponente}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{tableroOponente()}{tableroOponente()}}
+{\footnotesize\ttfamily \label{class_tablero_ad7af623a144f83dd03731e9a46a2d1ab} 
+void Tablero.\+tablero\+Oponente (\begin{DoxyParamCaption}\item[{char}]{hit}{, }\item[{char}]{fallo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Imprime el tablero del oponente, ocultando los barcos no revelados. Solo muestra impactos y fallos. 
+\begin{DoxyParams}{Parameters}
+{\em hit} & Símbolo de acierto. \\
+\hline
+{\em fallo} & Símbolo de fallo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tablero_ab18fe917434963f6f53554bbf951e163}\index{Tablero@{Tablero}!tableroPropio@{tableroPropio}}
+\index{tableroPropio@{tableroPropio}!Tablero@{Tablero}}
+\doxysubsubsection{\texorpdfstring{tableroPropio()}{tableroPropio()}}
+{\footnotesize\ttfamily \label{class_tablero_ab18fe917434963f6f53554bbf951e163} 
+void Tablero.\+tablero\+Propio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Imprime el tablero del jugador, mostrando todas las posiciones, incluidos los barcos. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tablero_8java}{Tablero.\+java}}\end{DoxyCompactItemize}

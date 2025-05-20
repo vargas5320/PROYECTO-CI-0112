@@ -1,0 +1,200 @@
+\doxysection{Jugador Class Reference}
+\hypertarget{class_jugador}{}\label{class_jugador}\index{Jugador@{Jugador}}
+
+
+Representa a un jugador del juego \doxylink{class_ahorcado}{Ahorcado}. Contiene su nombre, intentos, palabra secreta y el estado de letras adivinadas.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugador_aef9adcda1caddbca314d436a788158a9}{Jugador}} (String nombre, int intentos, char\mbox{[}$\,$\mbox{]} palabra, boolean\mbox{[}$\,$\mbox{]} palabra\+Aux)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_jugador}{Jugador}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_a4c0b3529e7a754763b30630f0a427c05}{set\+Nombre}} (String nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_a9a133642860713ef31a0e05c2e145afd}{set\+Intentos}} (int intentos)
+\begin{DoxyCompactList}\small\item\em Establece la cantidad de intentos del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_ae222356d3136407574bb074510584923}{set\+Palabra}} (char\mbox{[}$\,$\mbox{]} palabra)
+\begin{DoxyCompactList}\small\item\em Establece la palabra del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_aa2029fdd7efd07eda8b2411932e1e396}{set\+Palabra\+Aux}} (boolean\mbox{[}$\,$\mbox{]} palabra\+Aux)
+\begin{DoxyCompactList}\small\item\em Establece el estado de letras adivinadas. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_jugador_a71b9852e919416ad1e9d22a9ea7ecc0d}{get\+Nombre}} ()
+\item 
+int \mbox{\hyperlink{class_jugador_ad8eee7df70a5f563416e8f2e670787e5}{get\+Intentos}} ()
+\item 
+char\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_jugador_a8d515a766ac249ed213dd0c7bb733489}{get\+Palabra}} ()
+\item 
+boolean\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_jugador_a5b66b056299583ae04505ca7801593a0}{get\+Palabra\+Aux}} ()
+\item 
+void \mbox{\hyperlink{class_jugador_a9334a95edf89d851a17dfb9e71950287}{adivinar\+Letra}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador1, \mbox{\hyperlink{class_jugador}{Jugador}} jugador2)
+\begin{DoxyCompactList}\small\item\em Permite a un jugador adivinar una letra de la palabra del oponente. Realiza validaciones y actualiza los intentos o el estado del juego según el resultado. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_jugador_a07dda06d5e0dc6b184c2c57b23574208}{revisar\+Palabra}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador1, \mbox{\hyperlink{class_jugador}{Jugador}} jugador2)
+\begin{DoxyCompactList}\small\item\em Revisa el estado actual de la palabra del oponente. Muestra las letras adivinadas y verifica si la palabra ha sido completada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa a un jugador del juego \doxylink{class_ahorcado}{Ahorcado}. Contiene su nombre, intentos, palabra secreta y el estado de letras adivinadas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_jugador_aef9adcda1caddbca314d436a788158a9}\index{Jugador@{Jugador}!Jugador@{Jugador}}
+\index{Jugador@{Jugador}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{Jugador()}{Jugador()}}
+{\footnotesize\ttfamily \label{class_jugador_aef9adcda1caddbca314d436a788158a9} 
+Jugador.\+Jugador (\begin{DoxyParamCaption}\item[{String}]{nombre}{, }\item[{int}]{intentos}{, }\item[{char\mbox{[}$\,$\mbox{]}}]{palabra}{, }\item[{boolean\mbox{[}$\,$\mbox{]}}]{palabra\+Aux}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \doxylink{class_jugador}{Jugador}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del jugador \\
+\hline
+{\em intentos} & Número de intentos permitidos \\
+\hline
+{\em palabra} & Arreglo de caracteres de la palabra secreta \\
+\hline
+{\em palabra\+Aux} & Arreglo de booleanos que marca letras adivinadas \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jugador_a9334a95edf89d851a17dfb9e71950287}\index{Jugador@{Jugador}!adivinarLetra@{adivinarLetra}}
+\index{adivinarLetra@{adivinarLetra}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{adivinarLetra()}{adivinarLetra()}}
+{\footnotesize\ttfamily \label{class_jugador_a9334a95edf89d851a17dfb9e71950287} 
+void Jugador.\+adivinar\+Letra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador1}{, }\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Permite a un jugador adivinar una letra de la palabra del oponente. Realiza validaciones y actualiza los intentos o el estado del juego según el resultado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jugador1} & \doxylink{class_jugador}{Jugador} que adivina \\
+\hline
+{\em jugador2} & \doxylink{class_jugador}{Jugador} que tiene la palabra \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_ad8eee7df70a5f563416e8f2e670787e5}\index{Jugador@{Jugador}!getIntentos@{getIntentos}}
+\index{getIntentos@{getIntentos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getIntentos()}{getIntentos()}}
+{\footnotesize\ttfamily \label{class_jugador_ad8eee7df70a5f563416e8f2e670787e5} 
+int Jugador.\+get\+Intentos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Número de intentos restantes 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a71b9852e919416ad1e9d22a9ea7ecc0d}\index{Jugador@{Jugador}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily \label{class_jugador_a71b9852e919416ad1e9d22a9ea7ecc0d} 
+String Jugador.\+get\+Nombre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Nombre del jugador 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a8d515a766ac249ed213dd0c7bb733489}\index{Jugador@{Jugador}!getPalabra@{getPalabra}}
+\index{getPalabra@{getPalabra}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getPalabra()}{getPalabra()}}
+{\footnotesize\ttfamily \label{class_jugador_a8d515a766ac249ed213dd0c7bb733489} 
+char\mbox{[}$\,$\mbox{]} Jugador.\+get\+Palabra (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Palabra secreta del jugador 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a5b66b056299583ae04505ca7801593a0}\index{Jugador@{Jugador}!getPalabraAux@{getPalabraAux}}
+\index{getPalabraAux@{getPalabraAux}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getPalabraAux()}{getPalabraAux()}}
+{\footnotesize\ttfamily \label{class_jugador_a5b66b056299583ae04505ca7801593a0} 
+boolean\mbox{[}$\,$\mbox{]} Jugador.\+get\+Palabra\+Aux (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Arreglo auxiliar con el estado de letras adivinadas 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a07dda06d5e0dc6b184c2c57b23574208}\index{Jugador@{Jugador}!revisarPalabra@{revisarPalabra}}
+\index{revisarPalabra@{revisarPalabra}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{revisarPalabra()}{revisarPalabra()}}
+{\footnotesize\ttfamily \label{class_jugador_a07dda06d5e0dc6b184c2c57b23574208} 
+boolean Jugador.\+revisar\+Palabra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador1}{, }\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Revisa el estado actual de la palabra del oponente. Muestra las letras adivinadas y verifica si la palabra ha sido completada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jugador1} & \doxylink{class_jugador}{Jugador} que está adivinando \\
+\hline
+{\em jugador2} & \doxylink{class_jugador}{Jugador} oponente que tiene la palabra \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la palabra fue completamente adivinada; false en caso contrario 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_a9a133642860713ef31a0e05c2e145afd}\index{Jugador@{Jugador}!setIntentos@{setIntentos}}
+\index{setIntentos@{setIntentos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setIntentos()}{setIntentos()}}
+{\footnotesize\ttfamily \label{class_jugador_a9a133642860713ef31a0e05c2e145afd} 
+void Jugador.\+set\+Intentos (\begin{DoxyParamCaption}\item[{int}]{intentos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la cantidad de intentos del jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intentos} & Número de intentos \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_a4c0b3529e7a754763b30630f0a427c05}\index{Jugador@{Jugador}!setNombre@{setNombre}}
+\index{setNombre@{setNombre}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setNombre()}{setNombre()}}
+{\footnotesize\ttfamily \label{class_jugador_a4c0b3529e7a754763b30630f0a427c05} 
+void Jugador.\+set\+Nombre (\begin{DoxyParamCaption}\item[{String}]{nombre}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el nombre del jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del jugador \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_ae222356d3136407574bb074510584923}\index{Jugador@{Jugador}!setPalabra@{setPalabra}}
+\index{setPalabra@{setPalabra}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setPalabra()}{setPalabra()}}
+{\footnotesize\ttfamily \label{class_jugador_ae222356d3136407574bb074510584923} 
+void Jugador.\+set\+Palabra (\begin{DoxyParamCaption}\item[{char\mbox{[}$\,$\mbox{]}}]{palabra}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece la palabra del jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & Arreglo de caracteres que representa la palabra \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_aa2029fdd7efd07eda8b2411932e1e396}\index{Jugador@{Jugador}!setPalabraAux@{setPalabraAux}}
+\index{setPalabraAux@{setPalabraAux}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setPalabraAux()}{setPalabraAux()}}
+{\footnotesize\ttfamily \label{class_jugador_aa2029fdd7efd07eda8b2411932e1e396} 
+void Jugador.\+set\+Palabra\+Aux (\begin{DoxyParamCaption}\item[{boolean\mbox{[}$\,$\mbox{]}}]{palabra\+Aux}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Establece el estado de letras adivinadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra\+Aux} & Arreglo booleano auxiliar \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Jugador.\+java\end{DoxyCompactItemize}

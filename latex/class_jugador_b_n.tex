@@ -1,0 +1,113 @@
+\doxysection{Jugador\+BN Class Reference}
+\hypertarget{class_jugador_b_n}{}\label{class_jugador_b_n}\index{JugadorBN@{JugadorBN}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugador_b_n_a094becd7abdc0a06753f7203b44cadfe}{Jugador\+BN}} (String nombre, int vidas, char agua, char hit, char fallo)
+\item 
+String \mbox{\hyperlink{class_jugador_b_n_a1fe76513b419e3097e1eb8547ce53c98}{get\+Nombre}} ()
+\item 
+int \mbox{\hyperlink{class_jugador_b_n_a0d01dcb9e46dc09de979f4354d1a92a5}{get\+Vidas}} ()
+\item 
+char \mbox{\hyperlink{class_jugador_b_n_a5118ed03eef08ca57f1fa767c72f0e34}{get\+Hit}} ()
+\item 
+char \mbox{\hyperlink{class_jugador_b_n_ae3e1353eeb77c8bf1b439b30facfb72e}{get\+Fallo}} ()
+\item 
+\mbox{\hyperlink{class_tablero}{Tablero}} \mbox{\hyperlink{class_jugador_b_n_a8dd7aacfeda419e1beb658eed2f84851}{get\+Tablero}} ()
+\item 
+void \mbox{\hyperlink{class_jugador_b_n_a08b5aeb5e9914e3d621d193460a1f4e4}{perder\+Vida}} ()
+\item 
+void \mbox{\hyperlink{class_jugador_b_n_a295de0af61bdabbacb163bcd8801b9d9}{colocar\+Barcos}} (Scanner scan)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_jugador_b_n_a094becd7abdc0a06753f7203b44cadfe}\index{JugadorBN@{JugadorBN}!JugadorBN@{JugadorBN}}
+\index{JugadorBN@{JugadorBN}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{JugadorBN()}{JugadorBN()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a094becd7abdc0a06753f7203b44cadfe} 
+Jugador\+BN.\+Jugador\+BN (\begin{DoxyParamCaption}\item[{String}]{nombre}{, }\item[{int}]{vidas}{, }\item[{char}]{agua}{, }\item[{char}]{hit}{, }\item[{char}]{fallo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor de la clase \doxylink{class_jugador_b_n}{Jugador\+BN}. 
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nombre del jugador. \\
+\hline
+{\em vidas} & Cantidad de vidas o barcos. \\
+\hline
+{\em agua} & Símbolo que representa el agua en el tablero. \\
+\hline
+{\em hit} & Símbolo que representa un acierto. \\
+\hline
+{\em fallo} & Símbolo que representa un fallo. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jugador_b_n_a295de0af61bdabbacb163bcd8801b9d9}\index{JugadorBN@{JugadorBN}!colocarBarcos@{colocarBarcos}}
+\index{colocarBarcos@{colocarBarcos}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{colocarBarcos()}{colocarBarcos()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a295de0af61bdabbacb163bcd8801b9d9} 
+void Jugador\+BN.\+colocar\+Barcos (\begin{DoxyParamCaption}\item[{Scanner}]{scan}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Permite al jugador colocar sus barcos en el tablero. Cada jugador coloca 3 barcos de una sola casilla. 
+\begin{DoxyParams}{Parameters}
+{\em scan} & Objeto Scanner para recibir la entrada del usuario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jugador_b_n_ae3e1353eeb77c8bf1b439b30facfb72e}\index{JugadorBN@{JugadorBN}!getFallo@{getFallo}}
+\index{getFallo@{getFallo}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{getFallo()}{getFallo()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_ae3e1353eeb77c8bf1b439b30facfb72e} 
+char Jugador\+BN.\+get\+Fallo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene el símbolo usado para representar un fallo. \begin{DoxyReturn}{Returns}
+Carácter que representa un fallo. 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_b_n_a5118ed03eef08ca57f1fa767c72f0e34}\index{JugadorBN@{JugadorBN}!getHit@{getHit}}
+\index{getHit@{getHit}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{getHit()}{getHit()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a5118ed03eef08ca57f1fa767c72f0e34} 
+char Jugador\+BN.\+get\+Hit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene el símbolo usado para representar un acierto. \begin{DoxyReturn}{Returns}
+Carácter que representa un hit. 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_b_n_a1fe76513b419e3097e1eb8547ce53c98}\index{JugadorBN@{JugadorBN}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a1fe76513b419e3097e1eb8547ce53c98} 
+String Jugador\+BN.\+get\+Nombre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene el nombre del jugador. \begin{DoxyReturn}{Returns}
+Nombre del jugador. 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_b_n_a8dd7aacfeda419e1beb658eed2f84851}\index{JugadorBN@{JugadorBN}!getTablero@{getTablero}}
+\index{getTablero@{getTablero}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{getTablero()}{getTablero()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a8dd7aacfeda419e1beb658eed2f84851} 
+\mbox{\hyperlink{class_tablero}{Tablero}} Jugador\+BN.\+get\+Tablero (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene el tablero del jugador. \begin{DoxyReturn}{Returns}
+Objeto de tipo \doxylink{class_tablero}{Tablero}. 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_b_n_a0d01dcb9e46dc09de979f4354d1a92a5}\index{JugadorBN@{JugadorBN}!getVidas@{getVidas}}
+\index{getVidas@{getVidas}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{getVidas()}{getVidas()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a0d01dcb9e46dc09de979f4354d1a92a5} 
+int Jugador\+BN.\+get\+Vidas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtiene la cantidad de vidas restantes. \begin{DoxyReturn}{Returns}
+Número de vidas. 
+\end{DoxyReturn}
+\Hypertarget{class_jugador_b_n_a08b5aeb5e9914e3d621d193460a1f4e4}\index{JugadorBN@{JugadorBN}!perderVida@{perderVida}}
+\index{perderVida@{perderVida}!JugadorBN@{JugadorBN}}
+\doxysubsubsection{\texorpdfstring{perderVida()}{perderVida()}}
+{\footnotesize\ttfamily \label{class_jugador_b_n_a08b5aeb5e9914e3d621d193460a1f4e4} 
+void Jugador\+BN.\+perder\+Vida (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disminuye en uno la cantidad de vidas del jugador. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_jugador_b_n_8java}{Jugador\+BN.\+java}}\end{DoxyCompactItemize}
